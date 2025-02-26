@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pale_red">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_red"
+        app:title="Profil"
+        app:titleTextColor="@android:color/white"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prenume: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nume: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/tv_birthyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anul nașterii: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numele de utilizator: "
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+</LinearLayout>

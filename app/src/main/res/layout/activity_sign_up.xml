@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_red"
+    tools:context=".SignUpActivity">
+
+        <TextView
+            android:id="@+id/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/darkest_red"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dark_red"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize='22sp'
+            android:text="CINEMAX"
+            app:layout_constraintTop_toBottomOf="@id/actionBar"/>
+
+        <TextView
+            android:id="@+id/lname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize='15sp'
+            android:text="Prenumele: "
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            app:layout_constraintTop_toTopOf="@id/lname"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize='15sp'
+            android:text="Numele: "
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_last_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            app:layout_constraintTop_toTopOf="@id/fname"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/yob"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize='15sp'
+            android:text="Anul nașterii: "
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_year_of_birth"
+            android:inputType="number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            app:layout_constraintTop_toTopOf="@id/yob"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/usern"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize='15sp'
+            android:text="Numele de utilizator: "
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_username"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            app:layout_constraintTop_toTopOf="@id/usern"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/passw"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize='15sp'
+            android:text="Parola: "
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:inputType="textPassword"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            app:layout_constraintTop_toTopOf="@id/passw"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:text="Înregistrare"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="@color/dark_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
